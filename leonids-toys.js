@@ -44,12 +44,12 @@ const capgun = {
 }
 
 toys.push(armyguy)
-// console.log(toys)
 toys.push(capgun)
-// console.log(toys)
 
 for (const toy of toys) {
-    console.log(toy.size)
+    toy.price = toy.price * 1.05
+    toy.price = toy.price.toFixed(2)
+    console.log(`The ${toy.name}, manufactured by ${toy.manufacturer}, is a ${toy.size} toy which costs ${toy.price}.`)
 }
 
 
